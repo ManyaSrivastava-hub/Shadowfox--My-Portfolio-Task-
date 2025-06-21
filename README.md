@@ -1,1 +1,164 @@
 # Shadowfox--My-Portfolio-Task 1-
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Manya Srivastava — Portfolio</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Manya Srivastava</h1>
+      <p>Web Developer | Software Engineer | Data Analyst</p>
+    </header>
+
+    <section class="about">
+      <h2>About Me</h2>
+      <p>I’m a passionate front‑end developer who loves building responsive and interactive websites. Always learning and improving!</p>
+      <p>Currently pursuing a Bachelor of Computer Applications (BCA) from Galgotias University...</p>
+      <!-- Add more paragraphs as needed -->
+    </section>
+
+    <section class="skills">
+      <h2>Skills</h2>
+      <ul>
+        <li>HTML</li><li>CSS</li><li>JavaScript</li>
+        <li>React</li><li>Git &amp; GitHub</li>
+      </ul>
+    </section>
+
+    <section class="projects">
+      <h2>Projects</h2>
+      <div class="project">
+        <h3>Portfolio Website</h3>
+        <p>A clean and modern portfolio to showcase my projects.</p>
+      </div>
+      <div class="project">
+        <h3>Weather App</h3>
+        <p>Real‑time weather updates using the OpenWeather API.</p>
+      </div>
+    </section>
+
+    <section class="internships">
+      <h2>Internships</h2>
+      <div class="internship">
+        <h3>AI Data Insights Intern – Excelerate</h3>
+        <p class="duration">Jan 2025 – Mar 2025</p>
+        <p>Worked on AI‑powered data analysis projects—extracting, processing...</p>
+      </div>
+    </section>
+
+    <section class="resume">
+      <h2>Resume</h2>
+      <a href="resume.pdf" class="https://drive.google.com/file/d/1noxlHLj6XvQ1RTfsmow5X-iGgfWriMQg/view?usp=drivesdk" download>Download Resume</a>
+    </section>
+
+    <section class="contact">
+      <h2>Contact Me</h2>
+      <form class="contact-form">
+        <input type="text" name="name" placeholder="Your Name" required />
+        <input type="email" name="email" placeholder="Your Email" required />
+        <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+        <button type="submit">Send</button>
+      </form>
+    </section>
+
+    <footer>
+      &copy; 2025 Manya Srivastava. All rights reserved.
+    </footer>
+  </div>
+</body>
+</html>
+
+
+
+
+
+CSS CODE
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: Arial, sans-serif; line-height: 1.6; color: #333; background: #f9f9f9; }
+a { color: #0077cc; text-decoration: none; }
+a:hover { text-decoration: underline; }
+
+.container { max-width: 900px; margin: auto; padding: 1rem; }
+
+header { text-align: center; padding: 2rem 0; }
+header h1 { font-size: 2.5rem; }
+header p { font-size: 1.2rem; color: #555; }
+
+section {
+  background: blue;
+  padding: 1.5rem;
+  margin-bottom: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+h2 { margin-bottom: 1rem; color: #222; }
+
+.skills ul {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+.skills li {
+  background: #e0f3ff;
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  font-size: 0.9rem;
+}
+
+.project + .project { margin-top: 1rem; }
+
+.internship .duration {
+  font-style: italic;
+  color: #666;
+  margin-top: 0.25rem;
+}
+.internship p { margin-top: 0.5rem; }
+
+.resume-link {
+  display: inline-block;
+  padding: 0.75rem 1.25rem;
+  background: #02192a;
+  color: white;
+  border-radius: 5px;
+  margin-bottom: 1rem;
+}
+
+.contact-form {
+  display: grid;
+  gap: 0.75rem;
+}
+.contact-form input,
+.contact-form textarea {
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  width: 100%;
+}
+.contact-form button {
+  background: #52cc00;
+  color: white;
+  padding: 0.75rem;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.contact-form button:hover { background: #005fa3; }
+
+footer {
+  text-align: center;
+  margin: 2rem 0;
+  color: #888;
+  font-size: 0.9rem;
+}
+
+@media (max-width: 600px) {
+  header h1 { font-size: 2rem; }
+  .skills ul { justify-content: center; }
+}
